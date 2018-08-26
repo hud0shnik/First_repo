@@ -4,9 +4,16 @@ background: lightcyan;
 width: 800px;
 margin: auto;
 }
+div.contact{
+float: right;
+}
+img{
+float: right;
+}
 h1 {
 color: maroon;
 text-align: center;
+font-size: xx-large;
 }
 p {
 color: gray;
@@ -18,20 +25,17 @@ color: green;
 }
 a {
 color: cornflowerblue;
+font-family: 'Kosugi', sans-serif;
 }
 a:visited {
 color: tomato;
+font-family: 'Kosugi', sans-serif;
 }
 a:hover {
 text-decoration: underline;
+font-size: larger;
 }
 ol li {
 border: 5px solid darksalmon;
 border-radius: 10px;
-}
-li:nth-child(2) {
-background: orange;
-}
-li:first-child {
-background: yellow;
 }

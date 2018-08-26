@@ -1,0 +1,20 @@
+main {
+width: 500px;
+margin: auto;
+background: gray;
+overflow: auto;
+}
+nav {
+width: 100px;
+float: right;
+}
+/* убираем значения по умолчанию для p, наследуемые от элемента nav */
+nav p {
+margin: 0;
+padding: 0;
+}
+p {
+margin: 0; /* убираем значения полей для р по умолчанию */
+float: left;
+width: 380px;
+}
