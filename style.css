@@ -13,9 +13,25 @@ color: gray;
 border: 1px solid gray;
 padding: 10px;
 }
+p.selected {
+color: green;
+}
 a {
 color: cornflowerblue;
 }
 a:visited {
 color: tomato;
+}
+a:hover {
+text-decoration: underline;
+}
+ol li {
+border: 5px solid darksalmon;
+border-radius: 10px;
+}
+li:nth-child(2) {
+background: orange;
+}
+li:first-child {
+background: yellow;
 }
