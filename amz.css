@@ -1,0 +1,29 @@
+body {
+background: #f9e933;
+margin: auto;
+}/* 103 */
+header, main, footer {
+min-width: 855px;
+}
+header .container, main .container, footer .container {
+max-width: 855px;
+margin: auto;
+}
+main {
+background: white;
+}
+header {
+background: white;
+overflow: auto;
+}
+header h1 {
+float: left;
+width: 570px;
+}
+header nav {
+float: right;
+width: 285px;
+}
+img{
+float: right;
+}
