@@ -1,0 +1,17 @@
+a {
+color: cornflowerblue;
+font-family: 'Kosugi', sans-serif;
+}
+a:visited {
+color: tomato;
+font-family: 'Kosugi', sans-serif;
+}
+a:hover {
+text-decoration: underline;
+font-size: larger;
+}
+body {
+background: lightcyan;
+width: 800px;
+margin: auto;
+}
