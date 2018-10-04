@@ -1,8 +1,4 @@
-body {
-background: #88bfd8;
-margin: auto;
-float: right;
-}
-h1{
-	color: #4f4f4f;
+* {
+margin: 0;
+padding: 0;
 }
