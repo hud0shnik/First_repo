@@ -1,0 +1,13 @@
+body {
+background: black;
+width: 500px;
+
+/*margin: 150;*/
+margin-left: 15%;
+border: 3px dashed red;
+color: lime;
+font-family: 'Unna', serif;
+}
+html{
+	background: black;
+}
