@@ -1,14 +1,14 @@
 <html>
 <body>
-<link href="https://fonts.googleapis.com/css?family=Unna" rel="stylesheet">
-<link href="style.css" rel="stylesheet" type="text/css">
-<script type="text/javascript">
-
-																																/*
-	var a = 10;
-	var b = 17;
-	if (a == b) {
-		alert('101');
+<link href="https://fonts.googleapis.com/css?family=Unna" rel="stylesheet"														>
+<link href="style.css" rel="stylesheet" type="text/css"																			>
+<script type="text/javascript"																									>
+/*
+																																
+	var a = 10																													;
+	var b = 17																													;
+	if (a == b) 																												{
+		alert('101')																											;
 	}
 	else{
 		alert('010');
@@ -32,30 +32,63 @@
 		i++;
 			}
 	while(i<=25);
-																																*/
+																																
 	var i=0;
-	var ii=0;
+		var ii=0;
 	var iii=0;
-	var num=0;
+		var num=0;
+	var U=0;
 	while(i<=10){
-		document.write(i + " -MAIN <br />");
+		document.write(i + " -MAIN <br />" + U +" " + " -u <br />");
 		i++;
 		num++;
-		if (i==5) {
-
-		}
+		if (i==5){
+			document.write("IS FIVE <br />" + U +" " + " -u <br />");
+			U++;
+}
 		for (; ii<=10; ii++){
-			document.write(ii + " -SECOND <br />");
+			document.write(ii + " -SECOND <br />" + U +" " + " -u <br />");
 			num++;
+			if (i==5){
+				document.write("IS FIVE <br />" + U +" " + " -u <br />");
+				U++;
+}
 			for (; iii<=10; iii++){
-				document.write(iii + " -POST <br />");
+				document.write(iii + " -POST <br />" + U +" " + " -u <br />");
 				num++;
-	}
-	}
+				if (i==5){
+					document.write("IS FIVE <br />" + U +" " + " -u <br />");
+					U++;
+}
+}
+}
 	ii = 0;
 	iii = 0;
-	}
+}
 	document.write("total: " + num);
+	var b =0;
+	var user = prompt("101", b);
+	var result = confirm("101");
+	if (result == true) {
+		alert("1");
+	}
+	else{
+		alert("0");
+	}*/
+	var i = 0;
+	var ii = 0;
+	var iii = 0;
+while(i<=5){
+	document.write("First " + i + "iter");
+	i++;
+	while(ii<=5){
+		document.write("Second" + ii + "iter");
+		ii++;
+		while(iii<=5){
+			document.write("Third" + iii + "iter")
+		}
+	}
+}
 </script>
 </body>
 </html>
