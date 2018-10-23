@@ -1,7 +1,8 @@
 <html>
 <body>
-<link href="https://fonts.googleapis.com/css?family=Unna" rel="stylesheet"														>
-<link href="style.css" rel="stylesheet" type="text/css"																			>
+<link href="https://fonts.googleapis.com/css?family=Unna" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Economica" rel="stylesheet">
+<link href="cycle.css" rel="stylesheet" type="text/css">
 <script type="text/javascript"																									>
 /*
 																																
@@ -75,20 +76,30 @@
 	else{
 		alert("0");
 	}*/
-	var i = 0;
-	var ii = 0;
-	var iii = 0;
+	var i = 1;
+	var ii = 1;
+	var iii = 1;
+	var p = 0;
 while(i<=5){
-	document.write("First " + i + "iter");
+	document.write("----<b>First</b> cycle <b>" + i + "</b> iteration <br />");
 	i++;
+	p++;
 	while(ii<=5){
-		document.write("Second" + ii + "iter");
+		document.write("Second cycle <b>" + ii + "</b> iteration <br />");
+		p++;
 		ii++;
 		while(iii<=5){
-			document.write("Third" + iii + "iter")
+			document.write("---Third cycle <b>" + iii + "</b> iteration <br />");   
+			p++;
+			iii++;
 		}
+		iii=1;
 	}
+	ii=1;
+	
 }
+alert("Total:" + p)
+document.write("total: " + p);
 </script>
 </body>
 </html>

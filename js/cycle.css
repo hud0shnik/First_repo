@@ -1,0 +1,20 @@
+body{																														
+background: 
+black;
+width: 
+500px;
+margin-left: 
+15%;
+border: 
+3px dashed red;
+color: 
+lime;
+font-family: 'Unna', serif;
+}
+html{
+background: black;
+}
+b{
+color:white;
+/*border: 2px dashed blue;*/
+}
