@@ -1,0 +1,44 @@
+<html>
+<body>
+<link href="https://fonts.googleapis.com/css?family=Unna" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Economica" rel="stylesheet">
+<link href="cycle.css" rel="stylesheet" type="text/css">
+<button onclick="addRow()">1</button>
+<button onclick="addCol()">2</button>
+<button onclick="deleteCol()">3</button>
+<button onclick="deleteRow()">4</button>
+<table id="tableResult" style="border:10px solid;">
+  <tr>
+    <td>
+       
+    </td>
+  </tr>
+</table>
+<script type="text/javascript">
+var table = document.getElementById('tableResult');
+var row;
+addRow();
+function addRow() {
+  row = table.insertRow();
+  addCol();
+}
+function addCol() {
+  var col = document.createElement("td");
+  col.innerHTML = "&#127838;";
+  row.appendChild(col);
+}
+function deleteRow() {
+  table.deleteRow(table.rows.length - 1);
+  row = table.rows[table.rows.length - 1];
+}
+function deleteCol() {
+  var cols = row.getElementsByTagName('td');
+  if (cols.length > 1) {
+    row.removeChild(cols[cols.length - 1]);
+  } else {
+    deleteRow();
+  }
+}
+</script>
+</body>
+</html>
