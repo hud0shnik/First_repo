@@ -15,22 +15,54 @@
   </tr>
 </table>
 <script type="text/javascript">
+var smile = "&#127816";
+function changeSmile(){
+  switch (smile) {
+      case "&#127821;":
+      smile = "&#127822;";
+      break;
+      case "&#127822;":
+      smile = "&#127823;";
+      break;
+      case "&#127823;":
+      smile = "&#127824;";
+      break;
+      case "&#127824;":
+      smile = "&#127825;";
+      break;
+      case "&#127825;":
+      smile = "&#127826;";
+      break;
+      case "&#127826;":
+      smile = "&#127827;";
+      break;
+      case "&#127827;":
+      smile = "&#127821;";
+      break;
+      default:
+      smile = "&#127822;";
+  }}
 var table = document.getElementById('tableResult');
 var row;
 addRow();
 function addRow() {
+  changeSmile()
   row = table.insertRow();
   addCol();
 }
+
 function addCol() {
+  changeSmile()
   var col = document.createElement("td");
-  col.innerHTML = "&#127838;";
+  col.innerHTML = smile;
   row.appendChild(col);
 }
+
 function deleteRow() {
   table.deleteRow(table.rows.length - 1);
   row = table.rows[table.rows.length - 1];
 }
+
 function deleteCol() {
   var cols = row.getElementsByTagName('td');
   if (cols.length > 1) {
@@ -39,6 +71,7 @@ function deleteCol() {
     deleteRow();
   }
 }
+
 </script>
 </body>
 </html>
