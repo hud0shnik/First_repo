@@ -7,6 +7,8 @@
 <button onclick="addCol()">2</button>
 <button onclick="deleteCol()">3</button>
 <button onclick="deleteRow()">4</button>
+<button onclick="cb()">5</button>
+
 <table id="tableResult" style="border:10px solid;">
   <tr>
     <td>
@@ -14,37 +16,89 @@
     </td>
   </tr>
 </table>
+
 <script type="text/javascript">
 var smile = "&#127816";
+var F0 = 0;
+var F1 = 0;
+var F2 = 0;
+var F3 = 0;
+var F4 = 0;
+var F5 = 0;
+
 function changeSmile(){
-  switch (smile) {
-      case "&#127821;":
-      smile = "&#127822;";
-      break;
-      case "&#127822;":
-      smile = "&#127823;";
-      break;
-      case "&#127823;":
-      smile = "&#127824;";
-      break;
-      case "&#127824;":
-      smile = "&#127825;";
-      break;
-      case "&#127825;":
-      smile = "&#127826;";
-      break;
-      case "&#127826;":
-      smile = "&#127827;";
-      break;
-      case "&#127827;":
-      smile = "&#127821;";
-      break;
+var rand = Math.random() * (6);
+    rand = Math.floor(rand);
+  /*switch (rand) {
+      case 0:
+        smile = "&#127817;";
+        F0++;
+        break;
+      case 1:
+        smile = "&#127818;";
+        F1++;
+        break;
+      case 2:
+        smile = "&#127819;";
+        F2++;
+        break;
+      case 3:
+        smile = "&#127820;";
+        F3++;
+        break;
+      case 4:
+        smile = "&#127821;";
+        F4++;
+        break;
+      case 5:
+        smile = "&#127822;";
+        F5++;
+        break;
       default:
-      smile = "&#127822;";
-  }}
+        smile = "&#127844;";
+  }*/
+switch (rand) {
+      case 0:
+        smile = "0";
+        F0++;
+        break;
+
+      case 1:
+        smile = "1";
+        F1++;
+        break;
+
+      case 2:
+        smile = "2";
+        F2++;
+        break;
+
+      case 3:
+        smile = "3";
+        F3++;
+        break;
+
+      case 4:
+        smile = "4";
+        F4++;
+        break;
+
+      case 5:
+        smile = "5";
+        F5++;
+        break;
+
+      default:
+        smile = "6";
+  }
+}
 var table = document.getElementById('tableResult');
 var row;
 addRow();
+addCol();
+addCol();
+addCol();
+addCol();
 function addRow() {
   changeSmile()
   row = table.insertRow();
@@ -71,7 +125,216 @@ function deleteCol() {
     deleteRow();
   }
 }
+function cb(){
+/*if (F0==2){
+document.write("You win &#127817; x 2");
+}
+else if (F1==2){
+document.write("You win &#127818; x 2");
+}
+else if(F2==2){
+document.write("You win &#127819; x 2");
+}
+else if(F3==2){
+document.write("You win &#127820; x 2");
+}
+else if(F4==2){
+document.write("You win &#127821; x 2");
+}
+else if(F5==2){
+document.write("You win &#127822; x 2");
+}
+if (F0==2){
+document.write("0 x 2");
+}
+else if (F1==2){
+document.write("1 x 2");
+}
+else if(F2==2){
+document.write("2 x 2");
+}
+else if(F3==2){
+document.write("3 x 2");
+}
+else if(F4==2){
+document.write("4 x 2");
+}
+else if(F5==2){
+document.write("5 x 2");
+}
+else{
+document.write("U lost dude");
+} 
+if ((F0==2)||(F0==3)){
+  if (F0==2) {
+    document.write("0 x2");
+  }
+  else if ((F0==3)) {
+    document.write("0 x3");
+  }
+  else{
+    document.write("0000 || 00000");
+  }
+}
+else if ((F1==2)||(F1==3)){
+  if (F1==2) {
+    document.write("1 x2");
+  }
+  else if (F1==3) {
+    document.write("1 x3");
+  }
+  else{
+    document.write("1111 || 11111");
+  }
+}
+else if ((F2==2)||(F2==3)){
+  if (F2==2) {
+    document.write("2 x2");
+  }
+  else if (F2==3) {
+    document.write("2 x3");
+  }
+  else{
+    document.write("2222 || 22222");
+  }
+}
+else if ((F3==2)||(F3==3)){
+  if (F3==2) {
+    document.write("3 x2");
+  }
+  else if (F3==3) {
+    document.write("3 x3");
+  }
+  else{
+    document.write("3333 || 33333");
+  }
+}
+else if ((F4==2)||(F4==3)){
+  if (F4==2) {
+    document.write("4 x2");
+  }
+  else if (F4==3) {
+    document.write("4 x3");
+  }
+  else{
+    document.write("4444 || 44444");
+  }
+}
+else if ((F5==2)||(F5==3)){
+  if (F5==2) {
+    document.write("5 x2");
+  }
+  else if (F5==3) {
+    document.write("5 x3");
+  }
+  else{
+    document.write("5555 || 55555");
+  }
+}
+else{
+  document.write("ERR");
+}
+if((F0==2)||(F0==3)){
+  if (F0==2) {
+    document.write("0 x2");
+  }
+  else if (F0==3) {
+    document.write("0 x3");
+  }
+}
+else if ((F1==2)||(F1==3)){
+  if (F1==2) {
+    document.write("1 x2");
+  }
+  else if (F1==3) {
+    document.write("1 x3");
+  }
+}
+else if ((F2==2)||(F2==3)){
+  if (F2==2) {
+    document.write("2 x2");
+  }
+  else if (F2==3) {
+    document.write("2 x3");
+  }
+}
+else if ((F3==2)||(F3==3)){
+  if (F3==2) {
+    document.write("3 x2");
+  }
+  else if (F3==3) {
+    document.write("3 x3");
+  }
+}
+else if ((F4==2)||(F4==3)){
+  if (F4==2) {
+    document.write("4 x2");
+  }
+  else if (F4==3) {
+    document.write("4 x3");
+  }
+}
+else if ((F5==2)||(F5==3)){
+  if (F5==2) {
+    document.write("5 x2");
+  }
+  else if (F5==3) {
+    document.write("5 x3");
+  }
+}*/
+if ((F0==5)||(F1==5)||(F2==5)||(F3==5)||(F4==5)||(F5==5)) {
+  alert("Wow, dude u win");
+}
+else if(F0==4){
+  alert("0 x4");
+}
+else if(F1==4){
+  alert("1 x4");
+}
+else if(F2==4){
+  alert("2 x4");
+}
+else if(F3==4){
+  alert("3 x4");
+}
+else if(F4==4){
+  alert("4 x4");
+}
+else if(F5==4){
+  alert("5 x4");
+}
+else if(F0==3){
+  alert("0 x3");
+}
+else if(F1==3){
+  alert("1 x3");
+}
+else if(F2==3){
+  alert("2 x3");
+}
+else if(F3==3){
+  alert("3 x3");
+}
+else if(F4==3){
+  alert("4 x3");
+}
+else if(F5==3){
+  alert("5 x3");
+}
+else{
+  alert("Bebebe");
+}
 
+
+
+
+
+
+
+
+
+
+}
 </script>
 </body>
 </html>

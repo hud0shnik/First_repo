@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<body>
+<link href="https://fonts.googleapis.com/css?family=Unna" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Economica" rel="stylesheet">
+<link href="cycle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+var i = 999; /* 0-5 */
+var f0 = 0;
+var f1 = 0;
+var f2 = 0;
+var f3 = 0;
+var f4 = 0;
+var f5 = 0;
+
+function roll(){
+i = (Math.floor(Math.random() * 6) + 0  );
+switch(i){
+	case 0:
+		f0+=1;
+		break;
+	case 1:
+		f1+=1;
+		break;
+	case 2:
+		f2+=1;
+		break;
+	case 3:
+		f3+=1;
+		break;
+	case 4:
+		f4+=1;
+		break;
+	case 5:
+		f5+=1;
+		break;
+	default:
+	alert("err");
+}
+document.write(i);
+}
+roll();
+roll();
+roll();
+roll();
+roll();
+switch(f0){
+	case 3:
+	document.write(" три нуля");
+	break;
+	case 4: 
+	document.write(" четыре нуля");
+	break;
+	case 5:
+	document.write(" ПЯТЬ НУЛЕЙ");
+	break;
+}
+switch(f1){
+	case 3:
+	document.write(" три едиеички");
+	break;
+	case 4:
+	document.write(" четыре единички");
+	break;
+	case 5:
+	document.write(" ПЯТЬ единичек");
+	break;
+}
+switch(f2){
+	case 3:
+	document.write(" три двоечки");
+	break;
+	case 4:
+	document.write(" четыре двоечки");
+	break;
+	case 5:
+	document.write(" ПЯТЬ двоечек");
+	break;
+}
+switch(f3){
+	case 3:
+	document.write(" три тройки");
+	break;
+	case 4:
+	document.write(" четыре тройки");
+	break;
+	case 5:
+	document.write(" ПЯТЬ троек");
+	break;
+}
+switch(f4){
+	case 3:
+	document.write(" три четверки");
+	break;
+	case 4:
+	document.write(" четыре четверки");
+	break;
+	case 5:
+	document.write(" ПЯТЬ четверок");
+	break;
+}
+switch(f5){
+	case 3:
+	document.write(" три пятёрки");
+	break;
+	case 4:
+	document.write(" четыре пятёрки");
+	break;
+	case 5:
+	document.write(" ПЯТЬ пятёрок");
+	break;
+}
+function del(){
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
