@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<body>
+<link href="https://fonts.googleapis.com/css?family=Unna" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Economica" rel="stylesheet">
+<link href="cycle.css" rel="stylesheet" type="text/css">
+<button onclick="addRow()">1</button>
+<button onclick="addCol()">2</button>
+<button onclick="deleteCol()">3</button>
+<button onclick="deleteRow()">4</button>
+<button onclick="reset()">5</button>
+<button onclick="roll()">6</button>
+<button onclick="pip()">777</button>
+<table id="tableResult" style="border:10px solid;">
+  <tr>
+    <td>
+       
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var table = document.getElementById('tableResult');
+var row;
+var i = 999; /* 0-5 */
+var f0 = 0;
+var f1 = 0;
+var f2 = 0;
+var f3 = 0;
+var f4 = 0;
+var f5 = 0;
+var p = 1;
+function addRow() {
+  change();
+  row = table.insertRow();
+  addCol();
+}
+
+function addCol() {
+  change();
+  var col = document.createElement("td");
+  col.innerHTML = i;
+  row.appendChild(col);
+}
+
+function deleteRow() {
+  table.deleteRow(table.rows.length - 1);
+  row = table.rows[table.rows.length - 1];
+}
+
+function deleteCol() {
+  var cols = row.getElementsByTagName('td');
+  if (cols.length > 1) {
+    row.removeChild(cols[cols.length - 1]);
+  } else {
+    deleteRow();
+  }
+}
+function roll(){
+	addRow();
+	addCol();
+	addCol();
+	addCol();
+	addCol();
+
+}
+function reset(){
+	deleteRow();
+	deleteRow();
+	deleteRow();
+	deleteRow();
+	deleteRow();
+}
+function change(){
+i = (Math.floor(Math.random() * 6) + 0  );
+switch(i){
+	case 0:
+		f0+=1;
+		break;
+	case 1:
+		f1+=1;
+		break;
+	case 2:
+		f2+=1;
+		break;
+	case 3:
+		f3+=1;
+		break;
+	case 4:
+		f4+=1;
+		break;
+	case 5:
+		f5+=1;
+		break;
+	default:
+	alert("err");
+}
+switch(f0){
+	case 3:
+	done = " три нуля";
+	break;
+	case 4: 
+	done = " четыре нуля";
+	break;
+	case 5:
+	done = " ПЯТЬ НУЛЕЙ";
+	break;
+}
+switch(f1){
+	case 3:
+	done = " три едиеички";
+	break;
+	case 4:
+	done = " четыре единички";
+	break;
+	case 5:
+	done = " ПЯТЬ единичек";
+	break;
+}
+switch(f2){
+	case 3:
+	done = " три двоечки";
+	break;
+	case 4:
+	done = " четыре двоечки";
+	break;
+	case 5:
+	done = " ПЯТЬ двоечек";
+	break;
+}
+switch(f3){
+	case 3:
+	done = " три тройки";
+	break;
+	case 4:
+	done = " четыре тройки";
+	break;
+	case 5:
+	done = " ПЯТЬ троек";
+	break;
+}
+switch(f4){
+	case 3:
+	done = " три четверки";
+	break;
+	case 4:
+	done = " четыре четверки";
+	break;
+	case 5:
+	done = " ПЯТЬ четверок";
+	break;
+}
+switch(f5){
+	case 3:
+	done = " три пятёрки";
+	break;
+	case 4:
+	done = " четыре пятёрки";
+	break;
+	case 5:
+	done = " ПЯТЬ пятёрок";
+	break;
+}
+
+}
+
+
+function pip(){
+deleteRow();
+reset();
+roll();
+var col = document.createElement("td");
+col.innerHTML = done;
+row.appendChild(col);
+ i = 999; /* 0-5 */
+ f0 = 0;
+ f1 = 0;
+ f2 = 0;
+ f3 = 0;
+ f4 = 0;
+ f5 = 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+</script>
+
+</body>
+</html>
