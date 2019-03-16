@@ -1,0 +1,38 @@
+html{
+	background-color: black;
+}
+body{
+	margin: 20%;
+	background-color: black;
+	width: 400px;
+	height: 400px;
+	border: 1px solid green;
+}
+#numbers{
+	text-align: center;
+	border: 1px solid black;
+	color: green;
+	background-color: black;
+}
+#button{
+	width: 40px;
+	height: 20px;
+	border: 1px solid black;
+	margin-left: 180px;
+	margin-top: 5px;
+	background-color: red;
+	text-align: center;
+}
+#score1{
+	margin-top: 5px;
+	width: 200px;
+	height: 245px;
+	border: 1px solid black;
+	color: aqua;
+}
+#result{
+	color: aqua;
+}
+#iii{
+	color: red;
+}

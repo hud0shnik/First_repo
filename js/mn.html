@@ -63,6 +63,7 @@ function roll(){
 	addCol();
 	addCol();
 
+
 }
 function reset(){
 	deleteRow();
@@ -70,6 +71,13 @@ function reset(){
 	deleteRow();
 	deleteRow();
 	deleteRow();
+	 i = 999; /* 0-5 */
+ 	 f0 = 0;
+ 	 f1 = 0;
+ 	 f2 = 0;
+ 	 f3 = 0;
+ 	 f4 = 0;
+ 	 f5 = 0;
 }
 function change(){
 i = (Math.floor(Math.random() * 6) + 0  );
@@ -172,13 +180,6 @@ roll();
 var col = document.createElement("td");
 col.innerHTML = done;
 row.appendChild(col);
- i = 999; /* 0-5 */
- f0 = 0;
- f1 = 0;
- f2 = 0;
- f3 = 0;
- f4 = 0;
- f5 = 0;
 }
 
 
