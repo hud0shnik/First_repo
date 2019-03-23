@@ -1,0 +1,30 @@
+html{
+	background-color: #bdbdbd;
+}
+body{
+	margin: 10%;
+	background-color: gray;
+	width: 400px;
+	height: 500px;
+	border: 1px solid black;
+} 
+#result{
+	width: 200px;
+	height: 250px;
+	border: 1px solid black;	
+}
+
+#numbers{
+	text-align: center;
+	width: 400px;
+	height: 50px;	
+	border: 1px solid black;	
+
+}
+#but{
+	border: 1px solid black;
+	background-color: red;
+	width: 100px;
+	height: 25px;	
+	text-align: center;
+}
