@@ -1,0 +1,19 @@
+list = [];
+i = 0;
+ii = 0;
+io = 1;
+sy = 0;
+x = 0;
+while io <= 100:
+    list = [];
+    i = 0;
+    ii = 0;
+    io = 1;
+    sy = 0;
+    list = input(x).split();
+    for i in range(len(list)):
+        list[i] = int(list[i]);
+    while ii <= i:
+        sy += list[ii];
+        ii += 1;
+    x = sy/len(list)
