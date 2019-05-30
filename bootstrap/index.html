@@ -7,19 +7,60 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="style.css">
     <title>Bootstrap</title>
   </head>
   <body>
-<h1>3 blocks</h1>
-<div class="row">
-	<div class="col-md-4" style="background-color: #ff9999">First</div>
-	<div class="col-md-4" style="background-color: #99ccff">Second</div>
-	<div class="col-md-4" style="background-color: #00cc99">Third</div>
-</div>
+<nav class="navbar  navbar-expand-md navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <a href="#" class="navbar-brad">
+      <img class="img-fluid" src="vk.png">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Main</a>     
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact us</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
 
  
 
+
+ 
+<div class="carousel slide" data-ride="carousel" id="slides">
+  <ul class="carousel-indicators"> 
+ <li data-target="#slides" data-slide-to="0" class="active"></li>
+ <li data-target="#slides" data-slide-to="1"></li>
+ <li data-target="#slides" data-slide-to="2"></li>
+ </ul>
+  <!-- 
+            от 30.05.19 [я так устал, госпаде почему ничего не работает]
+  -->
+  <div class="carousel-inner">
+    <div class="crousel-item active">
+      <img src="img1.jpg" >
+    </div>
+    <div class="crousel-item">
+      <img src="img2.jpg" >
+    </div>
+    <div class="crousel-item">
+      <img src="img3.jpg" >
+    </div>
+  </div>
+</div>
 
 
 
