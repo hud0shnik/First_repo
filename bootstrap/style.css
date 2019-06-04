@@ -5,3 +5,37 @@
  .nav-link{
      font-size: 1.1em !important;
  }
+ .jumbotron{
+     padding: 1em;
+     border-radius: 0;
+     width: 70%;
+     margin: 0 auto;
+     margin-top: 20px;
+ }
+ .padding{
+     padding-bottom: 2em;
+ }
+ .alert{
+     width: 75%;
+     margin: 0 auto;
+ }
+
+ .alert hr{
+     border-top: 2px solid silver;
+     width: 95%;
+     margin-top: 0.3em;
+     margin-bottom: 1em;
+ }
+ .fa-code{
+     color: crimson;
+ }
+ .fa-bold{
+     color: blue
+ }
+.fa-css3{
+    color: aqua;
+ }
+ .fas{
+     font-size: 4em;
+     margin: 1em;
+ }
